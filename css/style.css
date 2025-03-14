@@ -1,0 +1,60 @@
+body {
+    background-color: rgb(197, 101, 49);
+}
+
+#meuNome {
+    font-style: italic;
+    font-family: cursive;
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    width: 50%;
+}
+
+#descricao{
+    font-family: cursive;
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+    width: 50%;
+}
+
+#contato {
+    font-family: cursive;
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 35px;
+    width: 50%;
+    
+}
+
+p {
+    color: aliceblue;
+    font-size: 24px;
+    font-family: monospace;
+}
+
+footer {
+    margin-top: 5px;
+    padding: 15px;
+    background-color: #773605;
+    color: #000;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(107, 63, 6, 0.7);
+    margin-bottom: 0;
+}
+
+#img-eu {
+    border-radius: 20px;
+}
+
+a {
+    color: aliceblue;
+}

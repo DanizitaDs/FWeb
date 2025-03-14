@@ -1,0 +1,29 @@
+#p1 {
+    font-style: italic;
+    font-size:large;
+    font-family: serif;
+}
+
+#p2 {
+    font-style: italic;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+#p3 {
+    font-style: italic;
+    font-size: large;
+    font-family: monospace;
+}
+
+#p4 {
+    font-style: italic;
+    font-size: large;
+    font-family: cursive;
+}
+
+#p5 {
+    font-style: italic;
+    font-size: large;
+    font-family: fantasy;
+}
