@@ -1,0 +1,13 @@
+p{
+    border-color: rgb(62, 150, 228);
+    /*border-style: double;*/
+    border-width: 5px;
+    /*border-radius: 20%;*/
+    
+    /*border: purple 10px;*/
+    border-radius: 15px;
+    border-style: dashed;
+    padding: 10px;
+    margin-right: 15px;
+    margin-top: 30px;
+}
