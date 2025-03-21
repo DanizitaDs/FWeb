@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#tabelaUm {
+    background-color: tomato;
+    float: left;
+    /* padding: 4%; */
+    width: 49%;
+    height: 80%;
+    
+}
+
+#tabelaUm p {
+    font-size: 20px;
+    font-family: cursive;
+}
+
+#tabelaUm h1 {
+    text-align: center;
+    font-size: 54px;
+    font-family: cursive;
+}
+
+#tabelaDois img {
+    float: right;
+    width: 49%;
+   height: 80%;
+   margin-right: 54%;
+   margin-bottom: 1%;
+   
+}
+
+#tabelaDois th,td{
+    border-bottom: 1px solid black;
+}
+
+#tabelaDois th{
+    text-align: right;
+}
+
+#tabelaDois p {
+    font-size: 15px;
+    font-family: cursive;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 2px;
+}
+
+#tabelaDois {
+    float: right;
+    width: 49%;
+
+}
+
+h1 {
+    color: yellow;
+}
+
+#rodape {
+    width: 100%;
+    height: 15%;
+    margin-top: 5%;
+    clear: both;
+    text-align: center;
+}
+
+#p-credits {
+    padding-top: 2%;
+    font-size: 15px;
+    text-align: center;
+    font-family: cursive;
+}
