@@ -2,6 +2,41 @@ body {
     background-color: rgb(197, 101, 49);
 }
 
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(107, 63, 6, 0.7);
+}
+
+header {
+    width: 64%;
+    height: 45px;
+    background-color: rgb(108, 108, 249);
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    padding-top: 25px;
+}
+
+
+ul li {
+    display: inline;
+    margin-right: 150px;
+}
+
+ul {
+    text-align: center;
+    display: inline;
+}
+
+a {
+    font-size: 25px;
+}
+
+
 #meuNome {
     font-style: italic;
     font-family: cursive;
@@ -11,6 +46,7 @@ body {
     color: aliceblue;
     font-size: 40px;
     width: 50%;
+    height: 45px;
 }
 
 #descricao{
@@ -52,7 +88,7 @@ footer {
 }
 
 #img-eu {
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 a {

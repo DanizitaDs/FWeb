@@ -1,0 +1,23 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: darkgrey;
+}
+.dpainel {
+    background-color: rgb(128, 58, 0);
+    width: 800px;
+    height: 600px;
+    position: relative;
+}
+
+#minha-imagem {
+    width: 30%;
+    position: absolute;
+    top: 200px;
+    right: 280px;
+}
