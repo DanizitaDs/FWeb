@@ -1,0 +1,125 @@
+html, body{ /*inicializar*/
+    width: 100%;
+    height: 100%;
+}
+
+.personagem[data-classe="simulacro"] img {
+    width: 29%;
+    height: 30%;
+}
+
+.personagem[data-classe="vampira"] img {
+    width: 35%;
+    height: 30%;
+}
+
+.personagem[data-classe="monstro marinho"] img {
+    width: 30%;
+    height: 30%;
+}
+
+.personagem[data-classe="lobisomem"] img {
+    width: 31%;
+    height: 30%;
+}
+
+.personagem[data-classe="múmia"] img {
+    width: 45%;
+    height: 40%;
+}
+
+.personagem[data-classe="yeti"] img {
+    width: 28%;
+    height: 15%;
+}
+
+.personagem[data-classe="vampira"] {
+    background-color: rgb(255, 125, 184);
+    border-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.personagem{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.personagem h2 {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 15px;
+    text-align: center;
+}
+
+.personagem p {
+    font-family: monospace;
+    font-size: 13px;
+    text-align: center;
+}
+
+.personagem[data-classe="lobisomem"] {
+    background-color: rgb(190, 49, 241);
+    border-color: rgb(0, 0, 0);
+    width: 34%;
+    height: 35%;
+    border-radius: 10px;
+
+}
+
+.personagem[data-classe="múmia"] {
+    background-color: rgb(245, 208, 57);
+    border-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+.personagem[data-classe="simulacro"] {
+    background-color: rgb(49, 241, 151);
+    border-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+
+
+
+.personagem[data-classe="monstro marinho"] {
+    background-color: rgb(49, 241, 238);
+    border-color: rgb(0, 0, 0);
+    width: 34%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+.personagem[data-classe="yeti"] {
+    background-color: rgb(49, 139, 241);
+    border-color: rgb(0, 0, 0);
+    width: 35%;
+    height: 35%;
+    border-radius: 10px;
+}
+
+.personagem img {
+    align-items: center;
+    align-self: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: cursive;
+    text-align: center;
+    padding: 3%;
+}
