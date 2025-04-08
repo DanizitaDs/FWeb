@@ -3,49 +3,62 @@ html, body{ /*inicializar*/
     height: 100%;
 }
 
+body {
+    background-color: rgb(55, 54, 66);
+}
+
 .personagem[data-classe="simulacro"] img {
-    width: 29%;
-    height: 30%;
+    width: 40%;
+    height: 60%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
 .personagem[data-classe="vampira"] img {
-    width: 35%;
-    height: 30%;
+    width: 40%;
+    height: 60%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
 .personagem[data-classe="monstro marinho"] img {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 60%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
 .personagem[data-classe="lobisomem"] img {
-    width: 31%;
-    height: 30%;
+    width: 40%;
+    height: 60%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
 .personagem[data-classe="múmia"] img {
-    width: 45%;
-    height: 40%;
+    width: 40%;
+    height: 60%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
 .personagem[data-classe="yeti"] img {
-    width: 28%;
-    height: 15%;
+    width: 40%;
+    height: 60%;
+    padding: 1%;
+    border-radius: 20px;
 }
 
-.personagem[data-classe="vampira"] {
-    background-color: rgb(255, 125, 184);
-    border-color: rgb(0, 0, 0);
-    width: 30%;
-    height: 35%;
-    border-radius: 10px;
-}
 
 main{
     width: 100%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2px;
+    margin: 5px;
+    gap: 14px;
 }
 
 .personagem{
@@ -58,39 +71,53 @@ main{
 .personagem h2 {
     font-style: italic;
     font-family: cursive;
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
+    padding: 2%;
+    font-weight: bold;
 }
 
 .personagem p {
-    font-family: monospace;
+    font-family: cursive;
     font-size: 13px;
     text-align: center;
+}
+
+.personagem[data-classe="vampira"] {
+    background-color: rgb(255, 125, 184);
+    border-color: rgb(0, 0, 0);
+    width: 30%;
+    height: 55%;
+    border-radius: 10px;
+    border: 5px solid black;
 }
 
 .personagem[data-classe="lobisomem"] {
     background-color: rgb(190, 49, 241);
     border-color: rgb(0, 0, 0);
-    width: 34%;
-    height: 35%;
+    width: 30%;
+    height: 55%;
     border-radius: 10px;
-
+    border: 5px solid black;
 }
 
 .personagem[data-classe="múmia"] {
     background-color: rgb(245, 208, 57);
     border-color: rgb(0, 0, 0);
     width: 30%;
-    height: 35%;
+    height: 55%;
     border-radius: 10px;
+    border: 5px solid black;
 }
 
 .personagem[data-classe="simulacro"] {
     background-color: rgb(49, 241, 151);
     border-color: rgb(0, 0, 0);
     width: 30%;
-    height: 35%;
+    height: 55%;
     border-radius: 10px;
+    border: 5px solid black;
+    
 }
 
 
@@ -99,17 +126,19 @@ main{
 .personagem[data-classe="monstro marinho"] {
     background-color: rgb(49, 241, 238);
     border-color: rgb(0, 0, 0);
-    width: 34%;
-    height: 35%;
+    width: 30%;
+    height: 55%;
     border-radius: 10px;
+    border: 5px solid black;
 }
 
 .personagem[data-classe="yeti"] {
     background-color: rgb(49, 139, 241);
     border-color: rgb(0, 0, 0);
-    width: 35%;
-    height: 35%;
+    width: 30%;
+    height: 55%;
     border-radius: 10px;
+    border: 5px solid black;
 }
 
 .personagem img {
@@ -118,8 +147,10 @@ main{
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     font-family: cursive;
     text-align: center;
     padding: 3%;
+    color: antiquewhite;
+    -webkit-text-stroke: 3px black;
 }

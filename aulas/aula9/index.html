@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Correio Secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<div class="chuva-de-cartas"></div>
+<script>
+    const chuvaContainer = document.querySelector('.chuva-de-cartas');
+
+    function criarCarta() {
+        const carta = document.createElement('div');
+        carta.classList.add('carta-caindo');
+        carta.innerText = '✉️';
+
+        // posição aleatória na horizontal
+        carta.style.left = Math.random() * 100 + 'vw';
+
+        // tamanho aleatório
+        const tamanho = Math.random() * 20 + 20;
+        carta.style.fontSize = `${tamanho}px`;
+
+        // tempo de animação aleatório
+        carta.style.animationDuration = `${Math.random() * 3 + 4}s`;
+
+        chuvaContainer.appendChild(carta);
+
+        // remover depois da animação
+        setTimeout(() => {
+            carta.remove();
+        }, 7000);
+    }
+
+    // Criar várias cartinhas caindo
+    setInterval(criarCarta, 300);
+</script>
+
+<body>
+
+    <div class="cartinha-container">
+        <div class="carta-emoji">✉️</div>
+        <div class="cartinha">
+            <div class="titulo-central">
+                <h1 class="typing">Correio Secreto</h1>
+              </div>
+            <p class="mensagem">
+                Ei Thiago! <br><br>
+                Só queria dizer que você é uma pessoa incrível! seu jeito é único e seu jeitinho de agir é oque te torna
+                mais especial!<br><br>
+                Você tem um coração enorme, uma energia que ilumina o ambiente, e um carisma especial que encanta todo
+                mundo. Nunca duvide do quanto você é especial, tá? 💫<br><br>
+                Continue sendo essa pessoa maravilhosa que espalha alegria, Diversão e amor por onde passa!<br><br>
+                Com carinho, alguém que te tirou no Correio Anônimo! 🤍
+            </p>
+        </div>
+</body>
+
+</html>

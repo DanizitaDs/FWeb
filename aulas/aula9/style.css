@@ -1,0 +1,150 @@
+body {
+    background: #030631;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cartinha-container {
+    position: relative;
+    z-index: 0;
+}
+
+.carta-emoji {
+    position: absolute;
+    top: -80px;
+    /* mais acima */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 70px;
+    /* tamanho maior */
+    z-index: 2;
+    /* garante que fique na frente */
+    animation: balancar 2s infinite ease-in-out, brilho 3s infinite;
+    background-color: white;
+    border: 4px solid #9499ff;
+    /* ← cor da borda */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.cartinha {
+    background: #e0fdff;
+    border: 3px solid #94a6ff;
+    border-radius: 20px;
+    padding: 30px 40px;
+    max-width: 500px;
+    box-shadow: 0 10px 20px rgba(148, 150, 255, 0.4);
+    text-align: center;
+    animation: aparecer 1s ease forwards;
+}
+
+.centro {                     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .titulo-central {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1px;   /* você pode ajustar aqui */
+    margin-bottom: 1px;
+  }
+  
+  .typing {
+    font-family: 'Courier New', monospace;
+    font-size: 32px;
+    color: #dfdfec;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #3367d6;
+    width: 0;
+    animation: digitar 4s steps(15) forwards;
+    text-align: center;
+    -webkit-text-stroke: 1px rgb(54, 13, 164);
+  }
+  
+  @keyframes digitar {
+    to {
+      width: 16ch;
+    }
+  }
+
+.mensagem {
+    font-size: 18px;
+    color: #11105d;
+    line-height: 1.6;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes balancar {
+
+    0%,
+    100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-50%) rotate(10deg);
+    }
+}
+.chuva-de-cartas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* não atrapalha clique */
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .carta-caindo {
+    position: absolute;
+    top: -50px;
+    font-size: 24px;
+    animation: cair 5s linear infinite;
+    color: #ffb3c6;
+  }
+  
+  @keyframes cair {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(110vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+@keyframes brilho {
+
+    0%,
+    100% {
+        box-shadow: 0 0 10px #b3d3ff;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #4d53ff;
+    }
+}
