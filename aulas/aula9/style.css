@@ -44,22 +44,23 @@ body {
     animation: aparecer 1s ease forwards;
 }
 
-.centro {                     
+.centro {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .titulo-central {
+}
+
+.titulo-central {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1px;   /* você pode ajustar aqui */
+    margin-top: 1px;
+    /* você pode ajustar aqui */
     margin-bottom: 1px;
-  }
-  
-  .typing {
+}
+
+.typing {
     font-family: 'Courier New', monospace;
     font-size: 32px;
     color: #dfdfec;
@@ -70,13 +71,13 @@ body {
     animation: digitar 4s steps(15) forwards;
     text-align: center;
     -webkit-text-stroke: 1px rgb(54, 13, 164);
-  }
-  
-  @keyframes digitar {
+}
+
+@keyframes digitar {
     to {
-      width: 16ch;
+        width: 16ch;
     }
-  }
+}
 
 .mensagem {
     font-size: 18px;
@@ -107,35 +108,38 @@ body {
         transform: translateX(-50%) rotate(10deg);
     }
 }
+
 .chuva-de-cartas {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* não atrapalha clique */
+    pointer-events: none;
+    /* não atrapalha clique */
     overflow: hidden;
     z-index: 10;
-  }
-  
-  .carta-caindo {
+}
+
+.carta-caindo {
     position: absolute;
     top: -50px;
     font-size: 24px;
     animation: cair 5s linear infinite;
     color: #ffb3c6;
-  }
-  
-  @keyframes cair {
+}
+
+@keyframes cair {
     0% {
-      transform: translateY(0) rotate(0deg);
-      opacity: 1;
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
     }
+
     100% {
-      transform: translateY(110vh) rotate(360deg);
-      opacity: 0;
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
     }
-  }
+}
 
 @keyframes brilho {
 
