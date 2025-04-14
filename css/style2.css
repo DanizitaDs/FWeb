@@ -4,9 +4,9 @@ body {
     padding: 0;
     background-color: #d9cfc1;
     font-family: Arial, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .container {
@@ -83,11 +83,12 @@ h2 {
     flex: 1;
 }
 
-.post a{
+.post a {
     color: #2d1f13;
 }
 
 .post {
+    background: radial-gradient(#a1866f, #a36f59);
     background-color: #a1866f;
     border-radius: 15px;
     padding: 15px;
@@ -103,7 +104,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-header h1{
+header h1 {
     padding: 17px;
 }
 
@@ -123,24 +124,25 @@ header h1{
 
 .post3 {
     background-color: #a1866f;
+    background: radial-gradient(#a1866f, #a36f59);
     border-radius: 15px;
     padding: 15px;
-    height: 270px;
+    height: 240px;
     width: 240px;
     text-align: center;
     color: #fffaf0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.post a{
+.post a {
     text-decoration: none;
 }
 
-.post2 a{
+.post2 a {
     text-decoration: none;
 }
 
-.post3 a{
+.post3 a {
     text-decoration: none;
 }
 
@@ -168,10 +170,11 @@ header h1{
 }
 
 .post2 {
+    background: radial-gradient(#a1866f, #a36f59);
     background-color: #a1866f;
     border-radius: 15px;
     padding: 15px;
-    height: 240px;
+    height: 220px;
     width: 240px;
     text-align: center;
     color: #fffaf0;
@@ -214,10 +217,11 @@ header h1{
 }
 
 .post4 {
+    background: radial-gradient(#a1866f, #a36f59);
     background-color: #876446;
     border-radius: 15px;
     padding: 15px;
-    height: 140px;
+    height: 200px;
     width: 240px;
     text-align: center;
     color: #fffaf0;
@@ -227,16 +231,27 @@ header h1{
 footer {
     width: 100%;
     background-color: #342118;
-    border-radius: 0;
-    padding: 20px 0;
+    padding: 20px;
+    width: auto;
+    height: 8%;
     text-align: center;
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+#fot{
+    width: 50%;
+    height: 90%;
+    margin: 0 auto;
+    
+}
 .social {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .social li {
@@ -264,6 +279,56 @@ footer {
 .social a.github {
     background-image: url(../img/devicon--github.png);
 }
+
+.post4,
+.post5,
+.post6 {
+    background-color: #a1866f;
+    background: radial-gradient(#a1866f, #a36f59);
+    border-radius: 15px;
+    padding: 15px;
+    width: 240px;
+    height: 270px;
+    ;
+    text-align: center;
+    color: #fffaf0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.post4 img,
+.post5 img,
+.post6 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.post4 h2,
+.post5 h2,
+.post6 h2 {
+    padding: 10px;
+    font-size: 18px;
+    color: #fdf5e6;
+    margin-bottom: 8px;
+}
+
+.post4 p,
+.post5 p,
+.post6 p {
+    margin: 0 auto;
+    max-width: 80%;
+    text-align: center;
+    font-size: 14px;
+    color: #fdf5e6;
+}
+
+.post4 a,
+.post5 a,
+.post6 a {
+    text-decoration: none;
+    color: #2d1f13;
+}
+
 
 #descricao-container {
     background-color: #a1866f;
@@ -314,4 +379,16 @@ footer {
 
 #contato-container a:hover {
     text-decoration: underline;
+}
+
+.post:hover,
+.post2:hover,
+.post3:hover,
+.post4:hover,
+.post5:hover,
+.post6:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.7s, transform 0.7s;
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1) rotate(-0.5deg);
 }
