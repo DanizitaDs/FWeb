@@ -3,17 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Cartão de Páscoa</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="cartao">
-    <h1>Feliz Páscoa!</h1>
-    <p>Que sua Páscoa seja cheia de alegria,<br>doçura e muito amor 🐣</p>
+  <div class="cartao" id="cartao">
+    <h1 id="saudacao">Feliz Páscoa!</h1>
+    <p id="mensagem">Que sua Páscoa seja cheia de alegria,<br>doçura e muito amor!</p>
+
     <div class="ovos">
-      <div class="ovo rosa"></div>
-      <div class="ovo azul"></div>
-      <div class="ovo lilas"></div>
+      <img src="https://www.nugali.com.br/upl/noticias/ovo-de-pascoa-com-chocolate-de-verdade.jpg" alt="Ovo de Páscoa" id="ovo">
+    </div>
+
+    <div class="botoes">
+      <button onclick="mudarSaudacao()">Mudar Saudação</button>
+      <button onclick="revelarSurpresa()">Surpresa!</button>
+      <button onclick="mudarCores()">Mudar Cores</button>
+      <button onclick="tocarSom()">Som!</button>
     </div>
   </div>
+
+  <audio id="somPascoa" src="pascoa.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
 </body>
 </html>
