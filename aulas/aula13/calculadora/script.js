@@ -1,20 +1,23 @@
 let textValue = '';
-let input = document.querySelector("#inputText")
+let input = document.querySelector("#inputText");
 
 function addNumber(number) {
     textValue += number;
     updateText();
 }
 
-function addOperator(operador) {
-    textValue += operador;
+function addOperator(operator) {
+    textValue += operator;
     updateText();
 }
 
 function addDecimal() {
-    textValue += '.';
-    updateText();
+    if (!textValue.endsWith('.')) {
+        textValue += '.';
+        updateText();
+    }
 }
+
 function clearText() {
     textValue = '';
     updateText();
@@ -24,7 +27,13 @@ function updateText() {
     input.value = textValue;
 }
 
-function calculate(){
-    textValue = eval(textValue);
-    updateText();
+function calculate() {
+    try {
+        textValue = eval(textValue).toString();
+        updateText();
+    } catch {
+        textValue = 'Erro';
+        updateText();
+        setTimeout(clearText, 1000);
+    }
 }
