@@ -10,13 +10,13 @@ body {
 }
 
 .container {
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    width: 97%;
+    padding: 20px;
+    margin: 0 auto 20px auto;
     background-color: #342118;
-    border-radius: 20px;
     padding: 20px;
     text-align: center;
+    height: 43%;
 }
 
 .topo {
@@ -55,6 +55,157 @@ body {
     gap: 60px;
     justify-content: center;
 }
+
+/* Remover margens e paddings do corpo */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #d9cfc1;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Topo da página */
+.topo-contato {
+    background-color: #342118;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.menu-contato ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.menu-contato a {
+    font-size: 26px;
+    color: #f5f5dc;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu-contato a:hover {
+    color: #f4e1b8;
+}
+
+.menu-contato a.ativo {
+    color: #f4e1b8;
+    border-bottom: 2px solid #f4e1b8;
+}
+
+/* Seção de conteúdo */
+.conteudo-contato {
+    padding: 60px 20px;
+    background-color: #f2e2c4;
+    color: #342118;
+}
+
+.perfil-contato {
+    display: flex;
+    gap: 40px;
+    background-color: #a1866f;
+    padding: 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    align-items: center;
+}
+
+.foto-contato {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #f4e1b8;
+}
+
+.texto-contato h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #f4e1b8;
+    margin-bottom: 20px;
+}
+
+.texto-contato p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #fffaf0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Seção de links de contato */
+.links-contato {
+    background-color: #7b5e57;
+    padding: 40px;
+    border-radius: 15px;
+    color: #fffaf0;
+    text-align: center;
+}
+
+.links-contato h2 {
+    font-size: 32px;
+    color: #f4e1b8;
+    margin-bottom: 20px;
+}
+
+.links-contato ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links-contato li {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.links-contato a {
+    color: #fdf5e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.links-contato a:hover {
+    color: #f4e1b8;
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.rodape-contato {
+    background-color: #342118;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.redes-contato a {
+    width: 50px;
+    height: 50px;
+    margin: 0 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+}
+
+.redes-contato a.instagram {
+    background-image: url(../img/fe--instagram.png);
+}
+
+.redes-contato a.whatsapp {
+    background-image: url(../img/akar-icons--whatsapp-fill.png);
+}
+
+.redes-contato a.github {
+    background-image: url(../img/devicon--github.png);
+}
+
 
 .menu-opcoes a {
     font-size: 24px;
@@ -280,8 +431,19 @@ footer {
     background-image: url(../img/devicon--github.png);
 }
 
+.post5{
+    background-color: #a1866f;
+    background: radial-gradient(#a1866f, #a36f59);
+    border-radius: 15px;
+    padding: 15px;
+    width: 240px;
+    height: 237px;
+    text-align: center;
+    color: #fffaf0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  
+}
+
 .post4,
-.post5,
 .post6 {
     background-color: #a1866f;
     background: radial-gradient(#a1866f, #a36f59);
@@ -289,7 +451,6 @@ footer {
     padding: 15px;
     width: 240px;
     height: 270px;
-    ;
     text-align: center;
     color: #fffaf0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
