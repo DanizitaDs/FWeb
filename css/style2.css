@@ -88,6 +88,16 @@ h2 {
     margin: 0;
 }
 
+.menu-opcoes ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
 .menu-contato a {
     font-size: 26px;
     color: #f5f5dc;
@@ -98,6 +108,12 @@ h2 {
 
 .menu-contato a:hover,
 .menu-contato a.ativo {
+    color: #f4e1b8;
+    border-bottom: 2px solid #f4e1b8;
+}
+
+.menu-opcoes a:hover,
+.menu-opcoes a.ativo {
     color: #f4e1b8;
     border-bottom: 2px solid #f4e1b8;
 }
@@ -376,6 +392,7 @@ footer #fot {
 
 /* RESPONSIVO */
 @media (max-width: 1024px) {
+    .menu-contato ul,
     .menu-opcoes ul,
     .topo,
     .blog-container {
@@ -448,6 +465,7 @@ footer #fot {
 }
 
 @media (max-width: 768px) {
+    .container .topo ul,
     .topo-contato .menu-contato ul,
     .perfil-contato,
     footer #fot,
