@@ -1,0 +1,13 @@
+.imagem-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 570px; 
+}
+body{
+    background-color: rgb(61, 61, 61);
+}
+img {
+    width: 30%;
+    height: auto;
+}
