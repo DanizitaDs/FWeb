@@ -1,13 +1,143 @@
-.imagem-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    background-image: url('./img/fundo.avif'); /* Caminho da imagem */
+    background-size: cover; /* Faz com que a imagem cubra toda a área da tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+ main {
+     display: flex;
+     justify-content: center;
+ }
+
+ /*
+ 
+ #imagemPoke {
+     position: absolute;
+     top: 40%;
+     left: 25%;
+ }
+
+
+
+ #form {
+     position: absolute;
+     top: 55%;
+     left: 30%;
+ }
+
+ #nomePokemon{
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+ }
+ #infor{
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+ }
+
+ #botoes{
+    position: absolute;
+    bottom: 5%;
+    left: 30%;
+ }
+*/
+
+#inputForm{
+    border-radius: 20px;
+}
+
+#form{
+    cursor: pointer;
+    position: absolute;
+    top: 58%;
+    left:41% ;
+    border-radius: 30px;
+}
+
+#celular{
+    width: 300%;
+    height: 100%;
+    margin-top: 0%;
+}
+
+#fotoPoke {
+    width: 180%;
+    height: 240%;
+}
+
+#figPoke {
+    width: 25%;
     height: 570px; 
 }
-body{
-    background-color: rgb(61, 61, 61);
+
+#imagemPoke{
+   position: absolute; 
+   top: 25%;
+   left: 38%;
 }
-img {
-    width: 30%;
-    height: auto;
+
+#nome{
+position: absolute;
+bottom: 29%;
+left: 42%;
+color: #ffffff;
+font-size: 30px;
+font-family:cursive;
+text-shadow: 
+2px 2px 0px #000000,   /* Sombra à direita e para baixo */
+-2px -2px 0px #000000,  /* Sombra à esquerda e para cima */
+2px -2px 0px #000000,   /* Sombra à direita e para cima */
+-2px 2px 0px #000000;
+}
+
+
+#informacoes1{
+    font-family:cursive;
+position: absolute;
+bottom: 14%;
+left: 44%;
+}
+
+#container {
+    position: relative;
+}
+
+#botoes{
+height: 60px;
+position: absolute;
+bottom: 2%;
+left: 37%;
+margin-left: 65px;
+
+}
+#voltar{
+    cursor: pointer;
+    color: #1c1919;
+    background: linear-gradient(to right, #ffffff, rgb(255, 255, 255, 0.655));
+    width: 80px;         font-family:cursive;
+  height: 40px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+}
+
+#proximo{ 
+    cursor: pointer;
+    color: #1c1919;
+    background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.655));
+    font-family:cursive;
+    width: 80px; 
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #000000;
+}
+#inputForm:hover{
+    background-color: rgb(168, 156, 156);
+    cursor: pointer;
+}
+
+.proximo:hover{
+    color: #000000;
+    cursor: pointer;
 }
