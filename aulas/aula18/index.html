@@ -10,42 +10,71 @@
 
 <body>
     <main>
+        <!-- Container principal do conteúdo da página -->
+
         <div class="container">
+            <!-- Div que agrupa todos os elementos visuais da pokédex -->
 
             <figure id="figPoke">
+                <!-- Figura da imagem da pokédex (celular) -->
                 <img id="celular" src="./img/pokedex.png" alt="pokedex">
+                <!-- Imagem da pokédex -->
             </figure>
 
             <figure id="imagemPoke">
+                <!-- Figura que vai exibir a imagem do Pokémon -->
                 <img id="fotoPoke" src="" alt="imagem pokemon">
+                <!-- Imagem do Pokémon que será carregada via JavaScript -->
             </figure>
 
             <form action="" id="form">
+                <!-- Formulário de busca do Pokémon -->
                 <input id="inputForm" type="text">
+                <!-- Campo para digitar o nome ou número do Pokémon -->
             </form>
 
             <div id="nome">
+                <!-- Div que exibe o ID e o nome do Pokémon -->
                 <span id="idPokemon">ID</span>
+                <!-- Span onde será exibido o ID do Pokémon -->
                 <span id="nomePokemon">Pokemon</span>
+                <!-- Span onde será exibido o nome do Pokémon -->
             </div>
+
             <div id="informacoes1">
+                <!-- Div que mostra os tipos do Pokémon -->
                 <span id="tipo1">tipo1</span>
+                <!-- Span com o primeiro tipo -->
                 <span id="tipo2">tipo2</span>
-                <div id="informacoes2">
-                    <div id="habilidade">habilidade</div>
-                    <div id="peso">peso</div>
-                    <div id="altura">altura</div>
-                </div>
-                
-                
+                <!-- Span com o segundo tipo (caso exista) -->
             </div>
+
+            <div id="informacoes2">
+                <!-- Div que mostra habilidade, peso e altura -->
+                <div id="habilidade">habilidade</div>
+                <!-- Div com a habilidade principal do Pokémon -->
+                <div id="peso">peso</div>
+                <!-- Div com o peso do Pokémon -->
+                <div id="altura">altura</div>
+                <!-- Div com a altura do Pokémon -->
+            </div>
+
             <div id="botoes">
-                <button id="voltar">Voltar</button>
-                <button id="proximo">Proximo</button>
+                <!-- Div com os botões de navegação -->
+                <button id="voltar"><</button>
+                <!-- Botão para voltar para o Pokémon anterior -->
+                <button id="proximo">></button>
+                <!-- Botão para ir para o próximo Pokémon -->
             </div>
         </div>
     </main>
+    <audio id="somPokemon" muted autoplay loop>
+        <source src="./audio/pokemon2.mp3" type="audio/mpeg">
+      </audio>
+    
+    <!-- Importa o arquivo JavaScript que faz a lógica da pokédex -->
     <script src="./script.js"></script>
+   
 </body>
 
 </html>

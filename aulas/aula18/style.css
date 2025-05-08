@@ -1,143 +1,174 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; /* Faz com que padding e borda não aumentem o tamanho total */
+    font-family: 'Oxanium', cursive; /* Define a fonte padrão do site */
+}
+
 body {
-    background-image: url('./img/fundo.avif'); /* Caminho da imagem */
-    background-size: cover; /* Faz com que a imagem cubra toda a área da tela */
+    background-image: url('./img/fundo.avif'); /* Coloca a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
+    text-align: center; /* Centraliza o texto */
+    min-height: 100vh; /* Garante que o corpo tenha no mínimo 100% da altura da tela */
 }
 
- main {
-     display: flex;
-     justify-content: center;
- }
-
- /*
- 
- #imagemPoke {
-     position: absolute;
-     top: 40%;
-     left: 25%;
- }
-
-
-
- #form {
-     position: absolute;
-     top: 55%;
-     left: 30%;
- }
-
- #nomePokemon{
-    position: absolute;
-    bottom: 30%;
-    left: 30%;
- }
- #infor{
-    position: absolute;
-    bottom: 25%;
-    left: 30%;
- }
-
- #botoes{
-    position: absolute;
-    bottom: 5%;
-    left: 30%;
- }
-*/
-
-#inputForm{
-    border-radius: 20px;
+main {
+    display: inline-block; /* Faz com que o main se comporte como um bloco em linha */
+    margin-top: 2%; /* Espaço acima do main */
+    padding: 15px; /* Espaço interno */
+    position: relative; 
 }
 
-#form{
-    cursor: pointer;
-    position: absolute;
-    top: 58%;
-    left:41% ;
-    border-radius: 30px;
+#inputForm {
+    cursor: pointer; /* Muda o cursor quando passa por cima */
+    width: 120%; /* Ocupa toda a largura disponível */
+    padding: 2%; 
+    outline: none; /* Remove contorno ao clicar */
+    border: 2px solid #333; /* Borda preta */
+    border-radius: 5px; /* Cantos arredondados */
+    font-weight: 600; /* Texto mais grosso */
+    color: #3a444d; /* Cor do texto */
+    font-size: clamp(8px, 5vw, 1rem); /* Tamanho responsivo da fonte */
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /* Sombra com efeito 3D */
 }
 
-#celular{
-    width: 300%;
-    height: 100%;
-    margin-top: 0%;
+#form {
+    position: absolute; /* Posição relativa ao elemento pai */
+    width: 49%; 
+    top: 61%;
+    left: 11.5%; /* Distância da esquerda */
+}
+
+#celular {
+    width: 240%; /* Aumenta bastante a largura */
+    height: 10%; /* Achata verticalmente */
+    margin-top: 0%; /* Sem margem acima */
+    bottom: 50%; 
 }
 
 #fotoPoke {
-    width: 180%;
-    height: 240%;
+    width: 90%; /* Reduz a largura */
+    height: 240%; /* Estica verticalmente */
 }
 
 #figPoke {
-    width: 25%;
-    height: 570px; 
+    margin-top: -7%; /* Sobe o elemento */
+    width: 37%; /* Define a largura */
+    bottom: 30%;
 }
 
-#imagemPoke{
-   position: absolute; 
-   top: 25%;
-   left: 38%;
+#imagemPoke {
+    position: absolute; 
+    top: 28%; /* Distância do topo */
+    left: 27%; /* Distância da esquerda */
 }
 
-#nome{
-position: absolute;
-bottom: 29%;
-left: 42%;
-color: #ffffff;
-font-size: 30px;
-font-family:cursive;
-text-shadow: 
-2px 2px 0px #000000,   /* Sombra à direita e para baixo */
--2px -2px 0px #000000,  /* Sombra à esquerda e para cima */
-2px -2px 0px #000000,   /* Sombra à direita e para cima */
--2px 2px 0px #000000;
+#nome {
+    position: absolute;
+    bottom: 42.5%; /* Posiciona a partir da parte de baixo */
+    left: 20%; /* Distância da esquerda */
+    color: #ffffff; /* Cor branca */
+    font-size: 25px; /* Tamanho da fonte */
+    font-family: cursive; /* Tipo de fonte */
+    text-shadow:
+        2px 2px 0px #484545, /* Sombra para direita e para baixo */
+        -2px -2px 0px #484545, /* Sombra para esquerda e para cima */
+        2px -2px 0px #484545, /* Sombra para direita e para cima */
+        -2px 2px 0px #484545; /* Sombra para esquerda e para baixo */
 }
 
+/*Estilizei as informações para que se parecessem um quadrado 3d que remetessem a tematica da pokedex 
+além de combinar com as paletas de cores*/
 
-#informacoes1{
-    font-family:cursive;
-position: absolute;
-bottom: 14%;
-left: 44%;
+#informacoes1 {
+    display: flex; /* Ativa o flexbox */
+    flex-direction: column; /* Faz os filhos (ex: spans) ficarem um embaixo do outro */
+    color: #484545; /* Cor do texto */
+    font-size: 13.5px;
+    font-family: cursive;
+    position: absolute;
+    bottom: 84.5%;
+    left: 51%;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #ded2d6;
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+/*Contém praticamente as mesmas informações da primeira porém modifica 
+os tamanhos, posição, tamanho da letra e etc.*/
+
+#informacoes2 {
+    color: #cdcdcd;
+    font-size: 15px;
+    font-family: cursive;
+    position: absolute;
+    bottom: 18%;
+    left: 23.9%; 
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #690023;
+    box-shadow: -3px 4px 0 #360012, -5px 7px 0 #000000;
 }
 
 #container {
-    position: relative;
+    position: relative; 
 }
 
-#botoes{
-height: 60px;
-position: absolute;
-bottom: 2%;
-left: 37%;
-margin-left: 65px;
-
+#botoes {
+    position: absolute;
+    bottom: 10%;
+    left: 36%;
+    width: 40%;
+    transform: translate(-57%, 0); /* Ajuste fino na posição */
+    display: flex; /* Deixa os botões lado a lado */
+    gap: 200px; /* Espaço entre eles */
 }
-#voltar{
+
+/* Estilizei os botões para fazer um quadrado 3d no qual parecesse um video game com a 
+tematica da pokedex*/
+
+#voltar {
     cursor: pointer;
-    color: #1c1919;
-    background: linear-gradient(to right, #ffffff, rgb(255, 255, 255, 0.655));
-    width: 80px;         font-family:cursive;
-  height: 40px;
-    border-radius: 20px;
-    border: 2px solid #000000;
+    width: 100%;
+    padding: 5%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(10px, 3vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
 
-#proximo{ 
+#proximo {
     cursor: pointer;
-    color: #1c1919;
-    background: linear-gradient(to right, #ffffff, rgba(255, 255, 255, 0.655));
-    font-family:cursive;
-    width: 80px; 
-    height: 40px;
-    border-radius: 20px;
-    border: 2px solid #000000;
+    width: 100%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem); /* Tamanho da fonte ajustado de forma responsiva */
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
 }
-#inputForm:hover{
-    background-color: rgb(168, 156, 156);
+#inputForm:hover {
+    background-color: rgb(168, 156, 156); /* Muda a cor quando passa o mouse */
+    cursor: pointer;
+}
+#proximo:hover {
+    background-color: rgb(28, 28, 28); /* Muda a cor quando passa o mouse */
+    cursor: pointer;
+}
+#voltar:hover {
+    background-color: rgb(25, 25, 25); /* Muda a cor quando passa o mouse */
     cursor: pointer;
 }
 
-.proximo:hover{
-    color: #000000;
+#informacoes1:hover {
+    background-color: rgb(161, 155, 155); /* Muda a cor quando passa o mouse */
     cursor: pointer;
 }
