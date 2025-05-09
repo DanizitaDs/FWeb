@@ -249,7 +249,8 @@ footer #fot {
 .post4,
 .post5,
 .post6,
-.post7 {
+.post7,
+.post8 {
     background: radial-gradient(#a1866f, #a36f59);
     border-radius: 15px;
     padding: 15px;
@@ -279,6 +280,10 @@ footer #fot {
 
 }
 
+.post8{
+    height: 237px;   
+}
+
 .post5 {
     height: 237px;
 }
@@ -293,7 +298,8 @@ footer #fot {
 .post4 img,
 .post5 img,
 .post6 img,
-.post7 img {
+.post7 img,
+.post8 img {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -305,7 +311,8 @@ footer #fot {
 .post4 h2,
 .post5 h2,
 .post6 h2,
-.post7 h2 {
+.post7 h2,
+.post8 h2 {
     padding: 10px;
     font-size: 18px;
     color: #fdf5e6;
@@ -318,7 +325,8 @@ footer #fot {
 .post4 p,
 .post5 p,
 .post6 p,
-.post7 p {
+.post7 p,
+.post8 p {
     margin: 0 auto 5px;
     max-width: 80%;
     text-align: center;
@@ -332,7 +340,8 @@ footer #fot {
 .post4 a,
 .post5 a,
 .post6 a,
-.post7 a {
+.post7 a,
+.post8 a {
     margin-top: 15px;
     text-decoration: none;
     color: #2d1f13;
@@ -383,7 +392,8 @@ footer #fot {
 .post4:hover,
 .post5:hover,
 .post6:hover,
-.post7:hover {
+.post7:hover,
+.post8:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
     transition: box-shadow 0.7s, transform 0.7s;
     background-color: rgba(255, 255, 255, 0.8);
@@ -407,7 +417,8 @@ footer #fot {
     .post3,
     .post5,
     .post6,
-    .post7 {
+    .post7,
+    .post8 {
         width: 90%;
         height: auto;
     }
@@ -444,7 +455,8 @@ footer #fot {
     .post4 h2,
     .post5 h2,
     .post6 h2,
-    .post7 h2 {
+    .post7 h2,
+    .post8 h2 {
         font-size: 16px;
     }
 
@@ -454,7 +466,8 @@ footer #fot {
     .post4 p,
     .post5 p,
     .post6 p,
-    .post7 p {
+    .post7 p,
+    .post8 p {
         font-size: 12px;
     }
 
