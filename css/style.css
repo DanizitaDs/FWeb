@@ -1,0 +1,169 @@
+/* Fonte geral e reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    color: #4e3d30;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #8b5e3c;
+    color: #fff;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  
+  .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .menu li a:hover,
+  .menu li a.active {
+    background-color: #5e3d27;
+  }
+  
+  /* Conteúdo principal */
+  main.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background: #fffaf5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(80, 60, 40, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  .card h2 {
+    margin-top: 15px;
+    color: #5a3c2e;
+  }
+  
+  .card p {
+    color: #6b4e3d;
+  }
+  
+  /* Rodapé */
+  footer {
+    background-color: #8b5e3c;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer .social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  
+  footer .social a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+  }
+  
+  footer .social a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 600px) {
+    .container-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 10px;
+  }
+  

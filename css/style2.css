@@ -2,75 +2,86 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: #d9cfc1;
     font-family: Arial, sans-serif;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
 
-.container {
-    width: 97%;
-    margin: 0 auto 20px;
-    background-color: #342118;
-    padding: 20px;
-    text-align: center;
-    height: 43%;
-}
-
-.topo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #a1866f;
-    margin: 0 auto 10px;
-    display: block;
-    position: relative;
-    top: -5px;
-}
-
-#meuNome {
-    font-size: 52px;
-    font-weight: bold;
-    color: #f4e1b8;
-    margin: 0 0 50px;
-    text-align: center;
-}
-
-.menu-opcoes ul {
-    list-style: none;
-    padding: 0;
+/* Fonte geral e reset básico */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f7f1eb;
+    color: #4e3d30;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background-color: #8b5e3c;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+  }
+  
+  .container-header {
     display: flex;
-    gap: 60px;
-    justify-content: center;
-}
-
-.menu-opcoes a {
-    font-size: 24px;
-    color: #f5f5dc;
-    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+  .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-.menu-opcoes a:hover {
-    color: #f4e1b8;
-}
-
-h1,
-h2 {
-    color: #f4e1b8;
-    margin-top: 9px;
-}
+    color: #fff;
+    margin-left: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-left: 3px;
+  }
+  
+  .menu li a:hover,
+  .menu li a.active {
+    background-color: #5e3d27;
+  }
+  
 
 /* CONTATO */
 .topo-contato {
@@ -127,7 +138,7 @@ h2 {
 .perfil-contato {
     display: flex;
     gap: 40px;
-    background-color: #a1866f;
+    background: radial-gradient(#342118, #3e1c0d);
     padding: 40px;
     border-radius: 15px;
     margin-bottom: 40px;
@@ -158,7 +169,7 @@ h2 {
 }
 
 .links-contato {
-    background-color: #7b5e57;
+    background: radial-gradient(#342118, #3e1c0d);
     padding: 40px;
     border-radius: 15px;
     color: #fffaf0;
@@ -200,16 +211,16 @@ h2 {
 
 .rodape-contato,
 footer {
-    background-color: #342118;
-    padding: 20px 0;
+    background-color: #8b5e3c;
+    padding: 15px 0;
     display: flex;
     justify-content: center;
 }
 
 .redes-contato a,
 .social a {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: 0 15px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -251,7 +262,7 @@ footer #fot {
 .post6,
 .post7,
 .post8 {
-    background: radial-gradient(#a1866f, #a36f59);
+    background: radial-gradient(#342118, #3e1c0d);
     border-radius: 15px;
     padding: 15px;
     width: 240px;
@@ -261,23 +272,25 @@ footer #fot {
 }
 
 .post2 {
-    height: 220px;
+    height: 270px;
 }
 
 .post3 {
-    height: 240px;
+    height: 330px;
 }
 
 .post7 {
-    height: 275px;
+    height: 367px;
 }
 
 .post4 {
-    background-color: #876446;
-        padding: 15px;
-        height: 280px;
-       
-
+    background-color: #342118;
+    padding: 5px;
+    height: 340px;
+    margin-right: 60px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .post8{
@@ -285,11 +298,14 @@ footer #fot {
 }
 
 .post5 {
-    height: 237px;
+    height: 327px;
 }
 
 .post6 {
-    height: 275px;
+    height: 420px;
+}
+.post8{
+    height: 297px;
 }
 
 .post img,
@@ -344,7 +360,7 @@ footer #fot {
 .post8 a {
     margin-top: 15px;
     text-decoration: none;
-    color: #2d1f13;
+    color: #e6e1de;
 }
 
 .blog-container {
@@ -406,7 +422,6 @@ footer #fot {
     .menu-opcoes ul,
     .topo,
     .blog-container {
-        flex-direction: column;
         align-items: center;
         gap: 15px;
         padding: 20px;
@@ -429,7 +444,6 @@ footer #fot {
     }
 
     .social {
-        flex-direction: column;
         align-items: center;
         gap: 10px;
     }
@@ -485,7 +499,6 @@ footer #fot {
     footer .social,
     .topo,
     .menu-opcoes ul {
-        flex-direction: column;
         align-items: center;
         text-align: center;
         gap: 10px;
