@@ -136,15 +136,17 @@ body {
 }
 
 .perfil-contato {
-    display: flex;
     gap: 40px;
     background: radial-gradient(#342118, #3e1c0d);
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     align-items: center;
-}
-
+    max-width: 850px; 
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  
 .foto-contato {
     width: 220px;
     height: 220px;
@@ -158,6 +160,7 @@ body {
     font-weight: bold;
     color: #f4e1b8;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .texto-contato p {
@@ -166,7 +169,8 @@ body {
     color: #fffaf0;
     max-width: 700px;
     margin: 0 auto;
-}
+    text-align: center; /* Centraliza o texto */
+  }
 
 .links-contato {
     background: radial-gradient(#342118, #3e1c0d);
@@ -241,6 +245,11 @@ footer {
 .redes-contato a.github,
 .social a.github {
     background-image: url(../img/devicon--github.png);
+}
+
+.redes-contato a.linkdin,
+.social a.linkdin {
+    background-image: url(../img/linkedin.png);
 }
 
 footer #fot {
