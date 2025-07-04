@@ -247,6 +247,10 @@ footer {
     background-image: url(../img/devicon--github.png);
 }
 
+.blog-container{
+    background-color: #f2e2c4;
+}
+
 .redes-contato a.linkdin,
 .social a.linkdin {
     background-image: url(../img/linkedin.png);
